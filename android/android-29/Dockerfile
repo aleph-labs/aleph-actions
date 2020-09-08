@@ -1,5 +1,5 @@
 # TODO - Publish our own Docker image
-FROM alephlabs/android-base
+FROM alephlabs/android-base:v1.0.0
 LABEL maintainer="Aleph Labs <engineering@aleph-labs.com>"
 
 ENV BUILD_TOOLS "29.0.3"
