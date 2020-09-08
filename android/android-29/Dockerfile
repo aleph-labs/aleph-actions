@@ -1,5 +1,5 @@
 # TODO - Publish our own Docker image
-FROM alvrme/alpine-android-base
+FROM docker.pkg.github.com/aleph-labs/aleph-docker-android-base/android-base:v1.0.0
 LABEL maintainer="Aleph Labs <engineering@aleph-labs.com>"
 
 ENV BUILD_TOOLS "29.0.3"
