@@ -1,0 +1,9 @@
+name: 'Android Gradle'
+description: 'Build Android projects'
+author: 'Aleph Labs <engineering@aleph-labs.com>'
+branding:
+  icon: 'box'
+  color: 'green'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
