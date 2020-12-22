@@ -56,7 +56,7 @@ try {
             
         var ignoredUsers = response.organization.team.members.edges
             .map(it => it.node.login)
-        let filteredInactiveUsers = inactiveUsers.filter(it => !excludedUsers.includes(it))
+        let filteredInactiveUsers = inactiveUsers.filter(it => !ignoredUsers.includes(it))
         
         core.setOutput("inactive-users", filteredInactiveUsers)
         core.setOutput("ignored-users", ignoredUsers)
