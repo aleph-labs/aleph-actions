@@ -1,0 +1,23 @@
+name: 'Cleanup Users'
+description: 'Cleanup inactive users from GitHub organization'
+inputs:
+  organization-name:
+    description: 'Name of the GitHub Organization'
+    required: true
+  organization-id:
+    description: 'ID of the GitHub Organization'
+    required: true
+  ignore-team-slug:
+    description: "Slug of a team who's members will be ignored"
+    required: true
+  token:
+    description: 'Access Token'
+    required: true
+outputs:
+  inactive-users:
+    description: 'List of inactive users.'
+  ignored-users:
+    description: 'List of users that were ignored.'
+runs:
+  using: 'node12'
+  main: 'index.js'
