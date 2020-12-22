@@ -7,6 +7,7 @@ try {
     const ignoredUsers = core.getInput('ignored-users')
     const googleChatWebhookUrl = core.getInput('google-chat-webhook-url')
 
+    core.info(googleChatWebhookUrl)
     core.info(inactiveUsers)
     core.info(ignoredUsers)
 
