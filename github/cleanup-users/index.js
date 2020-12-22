@@ -1,6 +1,5 @@
 const core = require('@actions/core')
 const github = require('@actions/github')
-const graphql = require('graphql.js')
 
 try {
     const organizationName = core.getInput('organization-name')
