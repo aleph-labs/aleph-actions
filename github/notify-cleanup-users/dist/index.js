@@ -14,6 +14,9 @@ try {
     const ignoredUsers = core.getInput('ignored-users')
     const googleChatWebhookUrl = core.getInput('google-chat-webhook-url')
 
+    console.log(inactiveUsers)
+    console.log(ignoredUsers)
+
     var data;
     if (inactiveUsers === undefined || inactiveUsers.length == 0) {
         data = `{
