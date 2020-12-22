@@ -26,7 +26,8 @@ try {
                       {
                         "keyValue": {
                           "topLabel": "Inactive Users (Last 30 Days)",
-                          "content": "No inactive users 👍!"
+                          "content": "No inactive users 👍!",
+                          "contentMultiline": "true"
                         }
                       }
                     ]
@@ -50,7 +51,8 @@ try {
                           {
                             "keyValue": {
                               "topLabel": "Inactive Users (Last 30 Days)",
-                              "content": "${inactiveUsers.join(", ")}"
+                              "content": "${inactiveUsers.join(", ")}",
+                              "contentMultiline": "true"
                             }
                           }
                         ]
@@ -91,13 +93,15 @@ try {
                           {
                             "keyValue": {
                               "topLabel": "Inactive Users (Last 30 Days)",
-                              "content": "${inactiveUsers.join(", ")}"
+                              "content": "${inactiveUsers.join(", ")}",
+                              "contentMultiline": "true"
                             }
                           },
                           {
                             "keyValue": {
                               "topLabel": "Ignored Users (Probably an Admin)",
-                              "content": "${ignoredUsers.join(", ")}"
+                              "content": "${ignoredUsers.join(", ")}",
+                              "contentMultiline": "true"
                             }
                           }
                         ]
