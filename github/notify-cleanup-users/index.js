@@ -3,8 +3,8 @@ const github = require('@actions/github')
 const fetch = require("node-fetch")
 
 try {
-    const inactiveUsers = core.getInput('inactive-users')
-    const ignoredUsers = core.getInput('ignored-users')
+    const inactiveUsers = JSON.parse(core.getInput('inactive-users'))
+    const ignoredUsers = JSON.parse(core.getInput('ignored-users'))
     const googleChatWebhookUrl = core.getInput('google-chat-webhook-url')
 
     core.info(googleChatWebhookUrl)

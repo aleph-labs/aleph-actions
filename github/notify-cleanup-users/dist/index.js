@@ -10,8 +10,8 @@ const github = __webpack_require__(476)
 const fetch = __webpack_require__(917)
 
 try {
-    const inactiveUsers = core.getInput('inactive-users')
-    const ignoredUsers = core.getInput('ignored-users')
+    const inactiveUsers = JSON.parse(core.getInput('inactive-users'))
+    const ignoredUsers = JSON.parse(core.getInput('ignored-users'))
     const googleChatWebhookUrl = core.getInput('google-chat-webhook-url')
 
     core.info(googleChatWebhookUrl)
