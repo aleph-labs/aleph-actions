@@ -14,8 +14,8 @@ try {
     const ignoredUsers = core.getInput('ignored-users')
     const googleChatWebhookUrl = core.getInput('google-chat-webhook-url')
 
-    console.log(inactiveUsers)
-    console.log(ignoredUsers)
+    core.info(inactiveUsers)
+    core.info(ignoredUsers)
 
     var data;
     if (inactiveUsers === undefined || inactiveUsers.length == 0) {
@@ -133,7 +133,7 @@ try {
         }
     }
 
-    console.log(data)
+    core.info(data)
 
     fetch(googleChatWebhookUrl, {
         method: 'POST',
@@ -144,7 +144,7 @@ try {
     })
         .then(response => response.json())
         .then(data => {
-            console.log('Success:', data);
+            core.info('Success:', data);
         })
         .catch((error) => {
             core.setFailed(error)
