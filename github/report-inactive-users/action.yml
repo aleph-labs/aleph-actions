@@ -13,9 +13,6 @@ inputs:
   google-chat-webhook-url:
     description: 'Google Chat webhook URL'
     required: true
-outputs:
-  inactive-users:
-    description: 'List of inactive users.'
 runs:
   using: 'node12'
   main: 'dist/index.js'
