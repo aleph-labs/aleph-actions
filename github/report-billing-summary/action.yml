@@ -1,5 +1,5 @@
-name: 'Report Inactive Users'
-description: "Report users in your GitHub Organization who haven't made any contributions in the current month."
+name: 'Report Billing Summary'
+description: "Report membership and licenses statistics for your GitHub Organization."
 inputs:
   organization-name:
     description: 'Name of the GitHub Organization'
