@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "graphql.js": "^0.6.7"
   }
 }
